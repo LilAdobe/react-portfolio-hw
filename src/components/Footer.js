@@ -25,16 +25,7 @@ function Footer() {
   return (
 
 <footer style={styles.footerStyle} id="contact-me" className="footer">
-<h2 style={styles.footerStyle}>Contact Me</h2>
-<ul>
-    <li>
-        <a href="tel:+9193765104">919-376-5104</a>
-        <a href="mailto:alexisguzman157@outlook.com">Email</a>
-        <a href="https://www.linkedin.com/in/alexis-guzman-75427113b">Linkedin</a>
-        <a href="https://github.com/LilAdobe">Github</a>
-
-    </li>
-</ul>
+<h2 style={styles.footerStyle}> Footer</h2>
 <p>&copy; Guzman, Inc.</p>
 </footer>
 

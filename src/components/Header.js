@@ -11,18 +11,44 @@ import '../styles/Header.css';
 const styles = {
   headerStyle: {
     background: '#8fcb9b',
+    height: '200px',
+    margin: '25px',
+    flexWrap: 'wrap'
   },
   headingStyle: {
     fontSize: '100px',
   },
+
+  
 };
 
 // We use JSX curly braces to evaluate the style object
 
-function Header() {
+function Header({ currentPage, handlePageChange }) {
   return (
+
+
     <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Welcome1</h1>
+      <h1 style={styles.headingStyle}>Alexis Guzman</h1>
+      <nav>
+            <ul>
+                <li>
+                    <a href="#Section" onClick={() => handlePageChange('Section')}
+                  className={currentPage === 'Section' ? 'nav-link active' : 'nav-link'}>About Me</a>
+                </li>
+                <li>
+                    <a href="#Projects" onClick={() => handlePageChange('Projects')}
+                  className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Work Examples</a>
+                </li>
+                <li>
+                    <a href="#Contact" onClick={() => handlePageChange('Contact')}
+                  className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact Me</a>
+                </li>
+                <li>
+                    <a href="https://my.indeed.com/p/alexisg-cymebow/preview">Resume</a>
+                </li>
+            </ul>
+        </nav>
     </header>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import avatar from '../../assets/images/avatar.png';
 
 
+
 // By importing the Section.css file, it is added to the DOM whenever this component loads
 
 // We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
@@ -29,6 +30,7 @@ function Section() {
     <section style={styles.sectionStyles} className="section">
       <h2>About Me</h2>
       <img src={avatar} style={styles.avatar}/>
+      
       <p>
         Hi Im Alexis Guzman, I have worked different types of jobs, such as being a book keepers assistant. To
         an assistant to Vera Concrete managing invoices and minor marketing.

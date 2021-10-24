@@ -11,10 +11,13 @@ const styles = {
     textAlign: 'center',
     marginTop: '27px'
   },
+  contact2Style: {
+    fontSize: '20px',
+    textAlign: 'center',
+  },
   box: {
 
     marginTop: '30px',
-    padding: '20px',
     borderRadius: '10px',
     width: '75%',
   }
@@ -42,8 +45,8 @@ function Contact() {
       </form>
 
 
-      <section>
-        <h2 className="container  text-black text-center pt-5" >Personal Contact</h2>
+      <section style={styles.contact2Style}>
+        <h2 className="  text-black text-center pt-5" >Personal Contact</h2>
         <ul>
           <a className="container  text-white text-center " href="tel:+9193765104">  Personal Phone Number</a>
           <a className="container  text-white text-center " href="mailto:alexisguzman157@outlook.com"> Personal Email</a>

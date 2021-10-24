@@ -1,0 +1,16 @@
+.footer {
+  padding: 15px;
+  clear:both;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  background-color:#7c2a2a;
+  color: white
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+.footer h2 {
+  font-size: 40px;
+}

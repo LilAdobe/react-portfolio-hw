@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
+import background from '../assets/images/test.PNG';
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 
@@ -10,13 +11,10 @@ import '../styles/Header.css';
 
 const styles = {
   headerStyle: {
-    background: '#8fcb9b',
-    height: '200px',
-    margin: '25px',
     flexWrap: 'wrap'
   },
   headingStyle: {
-    fontSize: '100px',
+    fontSize: '50px',
   },
 
   
@@ -49,6 +47,8 @@ function Header({ currentPage, handlePageChange }) {
                 </li>
             </ul>
         </nav>
+      
+        
     </header>
   );
 }

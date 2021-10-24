@@ -1,4 +1,5 @@
 import React from 'react';
+import avatar from '../../assets/images/avatar.png';
 
 
 // By importing the Section.css file, it is added to the DOM whenever this component loads
@@ -12,6 +13,13 @@ const styles = {
   sectionStyles: {
     background: '#EAE6E5',
   },
+
+  avatar:{
+    maxWidth: '25%',
+    height: 'auto'
+    
+  }
+
 };
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
@@ -19,21 +27,20 @@ const styles = {
 function Section() {
   return (
     <section style={styles.sectionStyles} className="section">
-      <h2>Lorem Ipsum Dolor Sit Amet</h2>
+      <h2>About Me</h2>
+      <img src={avatar} style={styles.avatar}/>
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-        voluptas nulla pariatur?
+        Hi Im Alexis Guzman, I have worked different types of jobs, such as being a book keepers assistant. To
+        an assistant to Vera Concrete managing invoices and minor marketing.
+        I'm currently attending a code bootcamp. Learning Javascript, HTML and CSS, and ready to apply to my
+        future career.
+        Placeholder - info
+        The Massachusett Indians were north of Plymouth Colony, led by Chief Massasoit, and the Pokanoket tribe
+        were north, east, and south.
+        Tisquantum was living with the Pokanokets, as his native tribe of the Patuxets had been effectively
+        wiped out prior to the arrival of the Mayflower;
+        indeed, the Pilgrims had established their former habitation as the site of Plymouth Colony.
+        [58] The Narragansett tribe inhabited Rhode Island.
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Footer.css'
 
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
@@ -9,10 +10,7 @@ import React from 'react';
 // Non quoted values default to "pixels", e.g. height, margin, padding
 
 const styles = {
-  footerStyle: {
-    background: '#8f8073',
-    height: '100px'
-  },
+
   footingStyle: {
     fontSize: '30px',
     textAlign: 'center',

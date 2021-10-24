@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar from '../../assets/images/avatar.png';
+import '../../styles/Section.css'
 
 
 
@@ -16,9 +17,14 @@ const styles = {
   },
 
   avatar:{
+
+    borderRadius: '360%',
+    border: 'solid 5px black',
+    padding: '5px',
     maxWidth: '25%',
-    height: 'auto'
-    
+    maxHeight: '25%',
+    display: 'block',
+
   }
 
 };
@@ -29,9 +35,9 @@ function Section() {
   return (
     <section style={styles.sectionStyles} className="section">
       <h2>About Me</h2>
-      <img src={avatar} style={styles.avatar}/>
+      <img src={avatar} className="container" style={styles.avatar}/>
       
-      <p>
+      <p >
         Hi Im Alexis Guzman, I have worked different types of jobs, such as being a book keepers assistant. To
         an assistant to Vera Concrete managing invoices and minor marketing.
         I'm currently attending a code bootcamp. Learning Javascript, HTML and CSS, and ready to apply to my
